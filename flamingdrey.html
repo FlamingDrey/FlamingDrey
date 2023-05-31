@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+    body {
+        background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8QLG1Mu8O93hlvHxEBQED7mVnGmwgHVHy2A&usqp=CAU');
+        background-size: cover;
+        background-position: center;
+        color: white;
+        text-align: center;
+        font-family: Arial, sans-serif;
+    }
+    
+    .welcome-text {
+        color: blue;
+        font-size: 24px;
+        margin-top: 200px;
+        transform-style: preserve-3d;
+        font-weight: bold;
+    }
+    
+    .welcome-text h1 {
+        transform: perspective(1000px) rotateX(25deg);
+        font-weight: bold;
+    }
+    
+    .tagline {
+        color: white;
+        font-size: 18px;
+        margin-top: 20px;
+        font-weight: bold;
+    }
+    
+    .button {
+        margin-top: 30px;
+    }
+    
+    /* Add the following CSS for the moving red circle */
+    .moving-circle {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 25px;
+        height: 25px;
+        border-radius: 50%;
+        background-color: red;
+        animation: moveCircle 2s infinite alternate;
+    }
+    
+    @keyframes moveCircle {
+        0% {
+            transform: translate(-50%, -50%);
+        }
+        25% {
+            transform: translate(-50%, -50%) translateX(200px);
+        }
+        50% {
+            transform: translate(-50%, -50%) translateY(200px);
+        }
+        75% {
+            transform: translate(-50%, -50%) translateX(-200px);
+        }
+        100% {
+            transform: translate(-50%, -50%) translateY(-200px);
+        }
+    }
+    
+    /* Add the following CSS to change the button color */
+    .button a {
+        display: inline-block;
+        text-decoration: none;
+    }
+    
+    .button button {
+        background-color: green;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        font-size: 16px;
+        font-weight: bold;
+    }
+</style>
+</head>
+<body>
+    <div class="moving-circle"></div>
+    <div class="welcome-text">
+        <h1>Welcome to FlamingDrey Website!</h1>
+    </div>
+    <div class="tagline">
+        <p>We execute, destroy, win!</p>
+    </div>
+    <div class="button">
+        <a href="https://youtube.com/@F8DYT" target="_blank">
+            <button>YouTube</button>
+        </a>
+    </div>
+</body>
+</html>
+<div class="button">
+        <a href="https://discord.gg/EVRzb7EP5N" target="_blank">
+            <button>Discord</button>
+        </a>
+    </div>
+</body>
+</html>
+<div class="button">
+        <a href="https://deltaexploits.com/getdelta_android.html" target="_blank">
+            <button>Executor</button>
+        </a>
+    </div>
+</body>
+</html>
